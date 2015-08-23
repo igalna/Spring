@@ -9,8 +9,11 @@ public class Main {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 		
-		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+		HelloWorld objectA = (HelloWorld) context.getBean("helloWorld");
+		objectA.setMessage("I am Object A");
+		objectA.getMessage();
 		
-		obj.getMessage();
+		HelloWorld objectB = (HelloWorld) context.getBean("helloWorld");
+		objectB.getMessage();
 	}
 }
