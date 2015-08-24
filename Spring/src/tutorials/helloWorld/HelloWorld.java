@@ -12,4 +12,12 @@ public class HelloWorld {
 		this.message = message;
 	}
 	
+	public void init() {
+		System.out.println("Bean is initializing");
+	}
+	
+	public void destroy() {
+		System.out.println("Bean is being destroyed");
+	}
+	
 }
