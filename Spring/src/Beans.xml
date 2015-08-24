@@ -21,5 +21,11 @@
    </bean>
    
     <bean class="tutorials.helloWorld.InitHelloWorld" />
+    
+    <bean id="textEditor" class="tutorials.textEditor.TextEditor">
+        <property name="spellChecker">
+            <bean id="spellChecker" class="tutorials.textEditor.SpellChecker"/>
+        </property>
+    </bean>
 
 </beans>
