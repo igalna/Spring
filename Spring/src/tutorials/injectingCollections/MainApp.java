@@ -1,5 +1,7 @@
 package tutorials.injectingCollections;
 
+import java.util.stream.IntStream;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,7 +16,8 @@ public class MainApp {
 		jc.getAddressList();
 		jc.getAddressMap();
 		jc.getAddressSet();
-		jc.getAddressProperties();
+		jc.getAddressProperties();		
+		
 	}
 
 }

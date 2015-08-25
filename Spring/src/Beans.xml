@@ -20,20 +20,19 @@
        <property name="message3" value="Namaste India"/>
    </bean>
    
-<!--     <bean class="tutorials.helloWorld.InitHelloWorld" /> -->
-    
-<!--     
+   
+<!--    <bean class="tutorials.helloWorld.InitHelloWorld" /> -->
+   
+   <bean id="textEditor" class="tutorials.textEditor.TextEditor" 
+      autowire="byName">
+      <property name="name" value="Generic Text Editor" />
+   </bean>
 
-	<bean id="textEditor"
-        class="tutorials.textEditor.TextEditor">
-        <property name="spellChecker">
-            <bean id="spellChecker" class="tutorials.textEditor.SpellChecker"/>
-        </property>
-    </bean> 
-    
-    			-->
-	
-    
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="tutorials.textEditor.SpellChecker">
+   </bean>
+   
+   
     
     <bean id="javaCollection" 
         class="tutorials.injectingCollections.JavaCollection">
