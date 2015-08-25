@@ -11,6 +11,9 @@
     default-destroy-method="destroy">
 
 
+     <context:annotation-config/>
+    
+    
    <bean id="helloWorld" 
        class="tutorials.helloWorld.HelloWorld">
        <property name="message1" value="Hello World!"/>
@@ -27,13 +30,12 @@
    
 <!--    <bean class="tutorials.helloWorld.InitHelloWorld" /> -->
    
-   <bean id="textEditor" class="tutorials.textEditor.TextEditor" 
-      autowire="byName">
-      <property name="name" value="Generic Text Editor" />
+   <bean id="textEditor" 
+       class="tutorials.textEditor.TextEditor">
    </bean>
 
-   <!-- Definition for spellChecker bean -->
-   <bean id="spellChecker" class="tutorials.textEditor.SpellChecker">
+   <bean id="spellChecker" 
+       class="tutorials.textEditor.SpellChecker">
    </bean>
    
    
@@ -78,9 +80,7 @@
         </property>
     </bean>
     
-	
     
-     <context:annotation-config/>
     
     <bean id="student"
         class="tutorials.annotations.Student">

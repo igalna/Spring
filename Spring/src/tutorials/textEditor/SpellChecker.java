@@ -10,5 +10,4 @@ public class SpellChecker {
 		System.out.println("Inside checkSpelling.");
 		
 	}
-
 }

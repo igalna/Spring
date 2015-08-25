@@ -12,7 +12,5 @@ public class MainApp {
 		TextEditor editor = (TextEditor) context.getBean("textEditor");
 		
 		editor.checkSpelling();
-
 	}
-
 }
