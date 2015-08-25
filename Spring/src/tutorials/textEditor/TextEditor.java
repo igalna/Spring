@@ -4,13 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class TextEditor {
 
+	@Autowired
 	private SpellChecker spellChecker;
 	private String name;
 	
-	@Autowired
-	public void setSpellChecker(SpellChecker sc) {
-		System.out.println("Inside setSpellChecker.");
-		this.spellChecker = sc;
+	public TextEditor() {
+		System.out.println("Inside TextEditor constructor.");
 	}
 	
 	public SpellChecker getSpellChecker() {
@@ -24,7 +23,6 @@ public class TextEditor {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	
 	public void checkSpelling() {
 		spellChecker.checkSpelling();
