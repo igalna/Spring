@@ -9,9 +9,9 @@ public class MainApp {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 		
-		Student student = (Student) context.getBean("student");
+		Profile profile = (Profile) context.getBean("profile");
 		
-		System.out.println("Name : " + student.getName());
-		System.out.println("Age : " + student.getAge());
+		profile.printAge();
+		profile.printName();
 	}
 }

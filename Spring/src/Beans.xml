@@ -81,11 +81,19 @@
     </bean>
     
     
+    <bean id="profile"
+        class="tutorials.annotations.Profile"></bean>
     
-    <bean id="student"
+    <bean id="student1"
         class="tutorials.annotations.Student">
         <property name="name" value="ZARA"/>
         <property name="age"  value="11"/>
+    </bean>
+    
+    <bean id="student2"
+        class="tutorials.annotations.Student">
+        <property name="name" value="PETER"/>
+        <property name="age"  value="10"/>
     </bean>
     
     
