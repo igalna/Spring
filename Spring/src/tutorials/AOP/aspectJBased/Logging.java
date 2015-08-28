@@ -1,4 +1,4 @@
-package tutorials.aspectJBasedAOP;
+package tutorials.AOP.aspectJBased;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;

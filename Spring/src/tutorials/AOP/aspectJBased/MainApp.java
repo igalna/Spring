@@ -1,4 +1,4 @@
-package tutorials.aspectJBasedAOP;
+package tutorials.AOP.aspectJBased;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

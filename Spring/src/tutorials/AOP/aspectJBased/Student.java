@@ -1,4 +1,4 @@
-package tutorials.aspectJBasedAOP;
+package tutorials.AOP.aspectJBased;
 
 public class Student {
 
