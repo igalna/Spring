@@ -101,7 +101,11 @@
         <property name="age"  value="10"/>
     </bean>
     
-    
+   
+    <bean id="customEventHandler"
+        class="tutorials.customEvents.CustomEventHandler"/>
+    <bean id="customEventPublisher"
+        class="tutorials.customEvents.CustomEventPublisher"/>
     
     
 </beans>
