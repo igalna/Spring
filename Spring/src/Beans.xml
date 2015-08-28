@@ -27,9 +27,14 @@
        <property name="message3" value="Namaste India"/>
    </bean>
    
+   <bean id="cStartEventHandler"
+       class="tutorials.helloWorld.CStartEventHandler"/>
+   <bean id="cStopEventHandler"
+       class="tutorials.helloWorld.CStopEventHandler"/>
    
 <!--    <bean class="tutorials.helloWorld.InitHelloWorld" /> -->
    
+ <!--   
    <bean id="textEditor" 
        class="tutorials.textEditor.TextEditor">
    </bean>
@@ -37,7 +42,7 @@
    <bean id="spellChecker" 
        class="tutorials.textEditor.SpellChecker">
    </bean>
-   
+    -->
    
     
     <bean id="javaCollection" 
